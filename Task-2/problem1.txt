@@ -1,0 +1,17 @@
+// Program to find if given number is divisible by 3
+Declare Integer num, i, temp, count
+
+Set x = 0
+Set count = 0
+Display "Enter a number : "
+Input num
+For i = 0 To num / 2
+    Set x = i * 3
+    If num == x Then
+        Set count = 1
+        Display "True"
+    End If
+End For
+If count == 0 Then
+    Display "False"
+End If
