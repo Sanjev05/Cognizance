@@ -1,0 +1,13 @@
+//The nth term of the Fibonacci series
+Declare Integer n, first, second, temp, i
+
+Set first = 1
+Set second = 0
+Display "Enter the number : "
+Input n
+For i = 1 To n
+    Set x = first + second
+    Set first = second
+    Set second = x
+End For
+Display x
